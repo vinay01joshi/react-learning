@@ -1,0 +1,19 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "Building Data driven React applicatin using graphql and flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinay01joshi/react-learning.git"
+  },
+  "author": "Vinay Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinay01joshi/react-learning/issues"
+  },
+  "homepage": "https://github.com/vinay01joshi/react-learning#readme"
+}
