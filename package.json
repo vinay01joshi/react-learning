@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/vinay01joshi/react-learning#readme",
   "dependencies": {
+    "babel-loader": "^8.0.4",
     "create-react-class": "^15.6.3",
     "express": "^4.16.4",
     "react": "^16.7.0",
@@ -30,6 +31,7 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
     "nodemon": "^1.18.9",
     "rimraf": "^2.6.2"
   }

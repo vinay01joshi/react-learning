@@ -5,9 +5,10 @@ var createReactClass = require('create-react-class');
 
 var Hello = createReactClass({
     render: function () {
-        return React.createElement("h3",null ,"Hello WebPack!");
+        //return React.createElement("h3",null ,"Hello WebPack!");
+        return <h3>Hello JSX ?</h3>
     }
 });
 
 
-ReactDOM.render(React.createElement(Hello),document.getElementById('react'));
+ReactDOM.render(<Hello/>,document.getElementById('react'));

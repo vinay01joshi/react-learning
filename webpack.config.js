@@ -3,5 +3,20 @@ module.exports = {
     output: {
         path: __dirname + "/public",
         filename:'bundle.js'
-    }
+    },
+    // loaders ...
+    module: {
+        rules: [
+          {
+            test: /\.m?js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          }
+        ]
+      }
 }

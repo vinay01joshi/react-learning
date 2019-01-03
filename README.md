@@ -7,3 +7,4 @@ Building Data-driven React Applications with Relay, GraphQL, and Flux
 
 # Command Line Commands
     . webpack public/js/app.js --output public/bundle.js
+    . webpack -w (Watching webpack files)
