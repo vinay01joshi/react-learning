@@ -12,14 +12,24 @@ app.listen(3000);
 
 console.log(process.env.MONGO_URL);
 
+let db ;
 MongoClient.connect(process.env.MONGO_URL,(err,client) => {
-    if(err) throw err ;
+    if(err) console.log(err) ;
     
-    let db = client.db('reactlearning');
+    db = client.db('reactlearning');
 
     db.collection("links").find({}).toArray((err,links)=>{
         if(err) throw err ;
 
         console.log(links);
     })
+});
+
+app.get('/data/links',(req,res) =>{
+
+    db.collection("links").find({}).toArray((err,links) =>{
+        if(err) throw err;
+
+        res.json(links);
+    });
 });
