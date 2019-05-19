@@ -1,6 +1,6 @@
 import {get} from "jquery";
 import ServerActions from "./actions/ServerActions";
-
+import LinkStore from './stores/LinkStore';
 
 let API = {
     fetchLinks() {
