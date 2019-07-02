@@ -1,5 +1,6 @@
 import express from 'express';
-
+import schema from  '../data/schema'
+import GraphQLHTTP from 'express-graphql';
 import { MongoClient } from 'mongodb';
 
 let app = express();
@@ -7,6 +8,11 @@ let app = express();
 //app.get('/',(req,res) => res.send('Hello NodeMon!'));
 
 app.use(express.static('public'));
+
+app.use('/graphql',GraphQLHTTP({
+    schema: schema,
+    graphiql: true
+}));
 
 app.listen(3000);
 
