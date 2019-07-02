@@ -19,7 +19,7 @@ let schema = new GraphQLSchema({
         fields: () => ({
             incrementCounter: {
                 type: GraphQLInt,
-                resolve: () => message
+                resolve: () => ++counter
             }
         })
     })
