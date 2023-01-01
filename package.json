@@ -38,7 +38,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.3.0",
     "nodemon": "^1.18.9"
   }
 }
